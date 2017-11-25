@@ -1,0 +1,39 @@
+---
+title: "Power analysis"
+author: Gareth Nellis, Fredrik Sävje
+date: "November 25, 2017"
+output:
+  pdf_document:
+    keep_tex: true
+    number_sections: true
+    fig_crop: true
+bibliography: bib.bib    
+header-includes:
+   - \usepackage{caption, booktabs, longtable}
+   - \usepackage{rotating}
+   - \captionsetup{width=5in}
+   - \usepackage{graphicx}
+---
+
+```{r setup, include=FALSE}
+# Preliminaries
+rm(list = ls())
+knitr::opts_chunk$set(echo = TRUE)
+
+library(lmtest)
+library(textclean)
+library(xtable)
+library(ggplot2)
+library(knitr)
+library(plyr)
+library(dplyr)
+library(reporttools)
+library(data.table)
+library(stargazer)
+library(grid)
+library(gridExtra)
+library(sandwich)
+```
+
+
+
